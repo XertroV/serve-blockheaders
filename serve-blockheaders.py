@@ -1,5 +1,13 @@
 #!/usr/bin/python
 
+'''
+serve-blockheaders.py
+
+Connects to bitcoind using credentials specified in credentials.json
+(of the form {"user":"someusername","passwd":"somepassword"} )
+and will pull block headers without caching them.
+'''
+
 from flask import Flask
 app = Flask(__name__)
 
