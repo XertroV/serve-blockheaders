@@ -29,8 +29,6 @@ def lookupHeaders(index):
         block = hexblock.decode('hex')
         blockheader = block[:80]
         return blockheader.encode('hex')
-
-print 'hi'
-
+		
 if __name__ == "__main__":
         app.run()
